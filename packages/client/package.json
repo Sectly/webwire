@@ -1,0 +1,28 @@
+{
+  "name": "@webwire/client",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "WebWire universal client - Browser, Node.js, Bun",
+  "license": "MIT",
+  "author": "Sectly",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun run ../../scripts/build.js client",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@webwire/core": "^0.1.0"
+  }
+}

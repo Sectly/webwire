@@ -1,0 +1,25 @@
+{
+  "name": "@webwire/core",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "WebWire protocol, framing, codecs, and shared interfaces",
+  "license": "MIT",
+  "author": "Sectly",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun run ../../scripts/build.js core",
+    "test": "bun test"
+  }
+}

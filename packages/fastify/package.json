@@ -1,0 +1,33 @@
+{
+  "name": "@webwire/fastify",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "WebWire Fastify integration",
+  "license": "MIT",
+  "author": "Sectly",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun run ../../scripts/build.js fastify",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@webwire/core": "^0.1.0",
+    "@webwire/server": "^0.1.0"
+  },
+  "peerDependencies": {
+    "@fastify/websocket": ">=8.0.0",
+    "fastify": ">=4.0.0"
+  }
+}

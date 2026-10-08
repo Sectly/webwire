@@ -1,0 +1,21 @@
+{
+  "name": "webwire",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "bun run scripts/build.js",
+    "test": "bun test --recursive",
+    "test:core": "bun test packages/core",
+    "test:client": "bun test packages/client",
+    "test:server": "bun test packages/server",
+    "test:express": "bun test packages/express",
+    "test:hono": "bun test packages/hono",
+    "test:fastify": "bun test packages/fastify"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@webwire/hono",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "WebWire Hono integration",
+  "license": "MIT",
+  "author": "Sectly",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun run ../../scripts/build.js hono",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@webwire/core": "^0.1.0",
+    "@webwire/server": "^0.1.0"
+  },
+  "peerDependencies": {
+    "hono": ">=4.0.0"
+  }
+}
