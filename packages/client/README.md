@@ -1,4 +1,4 @@
-# @webwire/client
+# @webwirejs/client
 
 Browser / Node.js / Bun client for WebWire.js with automatic transport fallback:
 **WebTransport → WebSocket → HTTP Long Polling**
@@ -6,15 +6,15 @@ Browser / Node.js / Bun client for WebWire.js with automatic transport fallback:
 ## Install
 
 ```bash
-bun add @webwire/client
+bun add @webwirejs/client
 # or
-npm install @webwire/client
+npm install @webwirejs/client
 ```
 
 ## Usage
 
 ```js
-import { WebWire } from '@webwire/client'
+import { WebWire } from '@webwirejs/client'
 
 const wire = new WebWire('http://localhost:3000/wire', {
   auth: { token: 'my-token' },

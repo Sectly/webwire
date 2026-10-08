@@ -1,5 +1,5 @@
 import { describe, it, expect } from "bun:test";
-import { WebWireServer } from "@webwire/server";
+import { WebWireServer } from "@webwirejs/server";
 import { webwire } from "../src/middleware.js";
 import {
   encodeFrame,
@@ -7,7 +7,7 @@ import {
   decodeFrame,
   FrameType,
   PROTOCOL_VERSION,
-} from "@webwire/core";
+} from "@webwirejs/core";
 
 /**
  * Minimal upgradeWebSocket mock that synchronously invokes onOpen then
@@ -34,7 +34,7 @@ function makeUpgradeWS() {
   return { upgradeWebSocket, captured, mockWs };
 }
 
-describe("@webwire/hono middleware", () => {
+describe("@webwirejs/hono middleware", () => {
   it("POST /connect returns sessionId", async () => {
     const wire = new WebWireServer();
     const { upgradeWebSocket } = makeUpgradeWS();

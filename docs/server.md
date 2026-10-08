@@ -3,15 +3,15 @@
 ## Installation
 
 ```bash
-bun add @webwire/server
+bun add @webwirejs/server
 # or
-npm install @webwire/server
+npm install @webwirejs/server
 ```
 
 ## Constructor
 
 ```js
-import { WebWireServer } from '@webwire/server'
+import { WebWireServer } from '@webwirejs/server'
 
 const wire = new WebWireServer(options?)
 ```

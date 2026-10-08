@@ -8,7 +8,7 @@ Minimal realtime bidirectional event library with automatic transport fallback:
 ## Install
 
 ```bash
-bun add @webwire/client @webwire/server @webwire/express
+bun add @webwirejs/client @webwirejs/server @webwirejs/express
 ```
 
 ## Quick start
@@ -18,8 +18,8 @@ bun add @webwire/client @webwire/server @webwire/express
 ```js
 import express from 'express'
 import { createServer } from 'http'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/express'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/express'
 
 const app = express()
 const wire = new WebWireServer()
@@ -35,7 +35,7 @@ createServer(app).listen(3000)
 **Client**
 
 ```js
-import { WebWire } from '@webwire/client'
+import { WebWire } from '@webwirejs/client'
 
 const wire = new WebWire('http://localhost:3000/wire')
 wire.on('chat:message', (msg) => console.log(msg))
@@ -48,12 +48,12 @@ wire.emit('chat:message', { text: 'hello' })
 
 | Package | Description |
 |---|---|
-| `@webwire/client` | Browser / Node / Bun client |
-| `@webwire/server` | Framework-agnostic server |
-| `@webwire/express` | Express middleware |
-| `@webwire/hono` | Hono app factory |
-| `@webwire/fastify` | Fastify plugin |
-| `@webwire/core` | Protocol, framing, codecs |
+| `@webwirejs/client` | Browser / Node / Bun client |
+| `@webwirejs/server` | Framework-agnostic server |
+| `@webwirejs/express` | Express middleware |
+| `@webwirejs/hono` | Hono app factory |
+| `@webwirejs/fastify` | Fastify plugin |
+| `@webwirejs/core` | Protocol, framing, codecs |
 
 ## Docs
 

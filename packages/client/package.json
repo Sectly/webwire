@@ -1,5 +1,5 @@
 {
-  "name": "@webwire/client",
+  "name": "@webwirejs/client",
   "version": "0.1.0",
   "type": "module",
   "description": "WebWire universal client - Browser, Node.js, Bun",
@@ -29,6 +29,6 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@webwire/core": "^0.1.0"
+    "@webwirejs/core": "^0.1.0"
   }
 }

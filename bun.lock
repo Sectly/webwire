@@ -9,33 +9,33 @@
       },
     },
     "packages/client": {
-      "name": "@webwire/client",
+      "name": "@webwirejs/client",
       "version": "0.1.0",
       "dependencies": {
-        "@webwire/core": "workspace:*",
+        "@webwirejs/core": "^0.1.0",
       },
     },
     "packages/core": {
-      "name": "@webwire/core",
+      "name": "@webwirejs/core",
       "version": "0.1.0",
     },
     "packages/express": {
-      "name": "@webwire/express",
+      "name": "@webwirejs/express",
       "version": "0.1.0",
       "dependencies": {
-        "@webwire/core": "workspace:*",
-        "@webwire/server": "workspace:*",
+        "@webwirejs/core": "^0.1.0",
+        "@webwirejs/server": "^0.1.0",
       },
       "peerDependencies": {
         "express": ">=4.0.0",
       },
     },
     "packages/fastify": {
-      "name": "@webwire/fastify",
+      "name": "@webwirejs/fastify",
       "version": "0.1.0",
       "dependencies": {
-        "@webwire/core": "workspace:*",
-        "@webwire/server": "workspace:*",
+        "@webwirejs/core": "^0.1.0",
+        "@webwirejs/server": "^0.1.0",
       },
       "peerDependencies": {
         "@fastify/websocket": ">=8.0.0",
@@ -43,21 +43,21 @@
       },
     },
     "packages/hono": {
-      "name": "@webwire/hono",
+      "name": "@webwirejs/hono",
       "version": "0.1.0",
       "dependencies": {
-        "@webwire/core": "workspace:*",
-        "@webwire/server": "workspace:*",
+        "@webwirejs/core": "^0.1.0",
+        "@webwirejs/server": "^0.1.0",
       },
       "peerDependencies": {
         "hono": ">=4.0.0",
       },
     },
     "packages/server": {
-      "name": "@webwire/server",
+      "name": "@webwirejs/server",
       "version": "0.1.0",
       "dependencies": {
-        "@webwire/core": "workspace:*",
+        "@webwirejs/core": "^0.1.0",
       },
     },
   },
@@ -80,17 +80,17 @@
 
     "@types/node": ["@types/node@26.6.4", "", { "dependencies": { "undici-types": "~8.9.0" } }, "sha512-ldVPDCzj7fsaGZrLB0NuHuTvJcsNasysBAqMolr/cgxrLd1xbqxIr3XJiPnHHJUCxj5sNF1vnRj9aWnrVh5Jcg=="],
 
-    "@webwire/client": ["@webwire/client@workspace:packages/client"],
+    "@webwirejs/client": ["@webwirejs/client@workspace:packages/client"],
 
-    "@webwire/core": ["@webwire/core@workspace:packages/core"],
+    "@webwirejs/core": ["@webwirejs/core@workspace:packages/core"],
 
-    "@webwire/express": ["@webwire/express@workspace:packages/express"],
+    "@webwirejs/express": ["@webwirejs/express@workspace:packages/express"],
 
-    "@webwire/fastify": ["@webwire/fastify@workspace:packages/fastify"],
+    "@webwirejs/fastify": ["@webwirejs/fastify@workspace:packages/fastify"],
 
-    "@webwire/hono": ["@webwire/hono@workspace:packages/hono"],
+    "@webwirejs/hono": ["@webwirejs/hono@workspace:packages/hono"],
 
-    "@webwire/server": ["@webwire/server@workspace:packages/server"],
+    "@webwirejs/server": ["@webwirejs/server@workspace:packages/server"],
 
     "abstract-logging": ["abstract-logging@2.0.1", "", {}, "sha512-2BjRTZxTPvheOvGbBslFSYOUkr+SjPtOnrLP33f+VIWLzezQpZcqVg7ja3L4dBXmzzgwT+a029jRx5PCi3JuiA=="],
 

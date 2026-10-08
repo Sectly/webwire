@@ -1,5 +1,5 @@
 {
-  "name": "@webwire/core",
+  "name": "@webwirejs/core",
   "version": "0.1.0",
   "type": "module",
   "description": "WebWire protocol, framing, codecs, and shared interfaces",

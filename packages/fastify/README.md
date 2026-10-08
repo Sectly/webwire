@@ -1,13 +1,13 @@
-# @webwire/fastify
+# @webwirejs/fastify
 
 Fastify plugin for WebWire.js. Registers WebSocket and HTTP Long Polling routes.
 
 ## Install
 
 ```bash
-bun add @webwire/fastify @webwire/server fastify @fastify/websocket
+bun add @webwirejs/fastify @webwirejs/server fastify @fastify/websocket
 # or
-npm install @webwire/fastify @webwire/server fastify @fastify/websocket
+npm install @webwirejs/fastify @webwirejs/server fastify @fastify/websocket
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install @webwire/fastify @webwire/server fastify @fastify/websocket
 ```js
 import Fastify from 'fastify'
 import websocket from '@fastify/websocket'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/fastify'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/fastify'
 
 const fastify = Fastify()
 const wire = new WebWireServer()
@@ -31,7 +31,7 @@ await fastify.register(webwire, { wireServer: wire, prefix: '/wire' })
 await fastify.listen({ port: 3000 })
 ```
 
-`@fastify/websocket` must be registered before `@webwire/fastify`.
+`@fastify/websocket` must be registered before `@webwirejs/fastify`.
 
 ## Plugin options
 

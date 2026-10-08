@@ -16,10 +16,10 @@ The client tries each in order and uses the first one that succeeds. If a connec
 
 The library is split into focused packages:
 
-- **`@webwire/core`** - the protocol layer. Binary framing, LEB128 varints, handshake negotiation, JSON codec, event emitter with wildcard support, and all shared error types. Nothing runtime-specific lives here.
-- **`@webwire/client`** - the client. Wraps the three transports, handles reconnect/heartbeat/request-response, and exposes the `WebWire` class.
-- **`@webwire/server`** - the server. Manages connections, dispatches frames, runs heartbeats, and exposes `WebWireServer` and `WireConnection`. Framework-agnostic - it speaks Fetch API `Request`/`Response` and raw byte callbacks.
-- **`@webwire/express`**, **`@webwire/hono`**, **`@webwire/fastify`** - thin adapters that wire the server into each framework.
+- **`@webwirejs/core`** - the protocol layer. Binary framing, LEB128 varints, handshake negotiation, JSON codec, event emitter with wildcard support, and all shared error types. Nothing runtime-specific lives here.
+- **`@webwirejs/client`** - the client. Wraps the three transports, handles reconnect/heartbeat/request-response, and exposes the `WebWire` class.
+- **`@webwirejs/server`** - the server. Manages connections, dispatches frames, runs heartbeats, and exposes `WebWireServer` and `WireConnection`. Framework-agnostic - it speaks Fetch API `Request`/`Response` and raw byte callbacks.
+- **`@webwirejs/express`**, **`@webwirejs/hono`**, **`@webwirejs/fastify`** - thin adapters that wire the server into each framework.
 
 ## Guides
 

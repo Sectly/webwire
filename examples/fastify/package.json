@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "@fastify/websocket": "^11.0.0",
-    "@webwire/fastify": "file:../../packages/fastify",
-    "@webwire/server": "file:../../packages/server",
+    "@webwirejs/fastify": "file:../../packages/fastify",
+    "@webwirejs/server": "file:../../packages/server",
     "fastify": "^5.0.0"
   }
 }

@@ -2,7 +2,7 @@ import { describe, it, expect, afterEach } from "bun:test";
 import Fastify from "fastify";
 import websocketPlugin from "@fastify/websocket";
 import WebSocket from "ws";
-import { WebWireServer } from "@webwire/server";
+import { WebWireServer } from "@webwirejs/server";
 import { webwire } from "../src/plugin.js";
 import {
   encodeFrame,
@@ -10,7 +10,7 @@ import {
   decodeFrame,
   FrameType,
   PROTOCOL_VERSION,
-} from "@webwire/core";
+} from "@webwirejs/core";
 
 async function buildApp(wireServer) {
   const fastify = Fastify({ logger: false });
@@ -19,7 +19,7 @@ async function buildApp(wireServer) {
   return fastify;
 }
 
-describe("@webwire/fastify plugin", () => {
+describe("@webwirejs/fastify plugin", () => {
   let fastify;
 
   afterEach(() => fastify?.close());

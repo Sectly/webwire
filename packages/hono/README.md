@@ -1,11 +1,11 @@
-# @webwire/hono
+# @webwirejs/hono
 
 Hono integration for WebWire.js. Returns a Hono app that you mount at your chosen path.
 
 ## Install
 
 ```bash
-bun add @webwire/hono @webwire/server hono
+bun add @webwirejs/hono @webwirejs/server hono
 ```
 
 ## Usage - Bun
@@ -13,8 +13,8 @@ bun add @webwire/hono @webwire/server hono
 ```js
 import { Hono } from 'hono'
 import { createBunWebSocket } from 'hono/bun'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/hono'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/hono'
 
 const app = new Hono()
 const wire = new WebWireServer()
@@ -32,15 +32,15 @@ Bun.serve({ fetch: app.fetch, websocket, port: 3000 })
 ## Usage - Node.js
 
 ```bash
-npm install @webwire/hono @webwire/server hono @hono/node-server
+npm install @webwirejs/hono @webwirejs/server hono @hono/node-server
 ```
 
 ```js
 import { serve } from '@hono/node-server'
 import { createNodeWebSocket } from '@hono/node-server/ws'
 import { Hono } from 'hono'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/hono'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/hono'
 
 const app = new Hono()
 const wire = new WebWireServer()

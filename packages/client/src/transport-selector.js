@@ -1,7 +1,7 @@
 import { WebTransportTransport } from "./transports/webtransport.js";
 import { WebSocketTransport } from "./transports/websocket.js";
 import { PollingTransport } from "./transports/polling.js";
-import { TransportError } from "@webwire/core";
+import { TransportError } from "@webwirejs/core";
 
 const ALL = ["webtransport", "websocket", "polling"];
 

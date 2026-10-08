@@ -13,7 +13,7 @@ for (const pkg of packages) {
   const pkgDir = resolve(root, "packages", pkg);
   const entry = resolve(pkgDir, "src", "index.js");
 
-  console.log(`Building @webwire/${pkg}...`);
+  console.log(`Building @webwirejs/${pkg}...`);
 
   await build({
     entrypoints: [entry],
@@ -33,17 +33,17 @@ for (const pkg of packages) {
     external: getExternals(pkg),
   });
 
-  console.log(`  ✓ @webwire/${pkg}`);
+  console.log(`  ✓ @webwirejs/${pkg}`);
 }
 
 function getExternals(pkg) {
   const map = {
     core: [],
-    client: ["@webwire/core"],
-    server: ["@webwire/core"],
-    express:  ["@webwire/core", "@webwire/server", "express"],
-    hono:     ["@webwire/core", "@webwire/server", "hono"],
-    fastify:  ["@webwire/core", "@webwire/server", "fastify", "@fastify/websocket"],
+    client: ["@webwirejs/core"],
+    server: ["@webwirejs/core"],
+    express:  ["@webwirejs/core", "@webwirejs/server", "express"],
+    hono:     ["@webwirejs/core", "@webwirejs/server", "hono"],
+    fastify:  ["@webwirejs/core", "@webwirejs/server", "fastify", "@fastify/websocket"],
   };
   return map[pkg] ?? [];
 }

@@ -1,4 +1,4 @@
-import { TransportError } from "@webwire/core";
+import { TransportError } from "@webwirejs/core";
 
 export class WebSocketTransport {
   name = "websocket";

@@ -1,4 +1,4 @@
-import { WebWire } from '@webwire/client'
+import { WebWire } from '@webwirejs/client'
 import { createInterface } from 'readline'
 
 const username = process.argv[2] ?? 'user' + Math.floor(Math.random() * 1000)

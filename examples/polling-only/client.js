@@ -1,6 +1,6 @@
 // Force HTTP Long Polling by restricting the transport list.
 // Useful for environments where WebSocket is blocked (proxies, firewalls).
-import { WebWire } from '@webwire/client'
+import { WebWire } from '@webwirejs/client'
 
 const wire = new WebWire('http://localhost:3000/wire', {
   transports: ['polling'], // skip WebTransport and WebSocket entirely

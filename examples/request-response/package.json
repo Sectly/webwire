@@ -8,9 +8,9 @@
     "client": "node client.js"
   },
   "dependencies": {
-    "@webwire/client": "file:../../packages/client",
-    "@webwire/express": "file:../../packages/express",
-    "@webwire/server": "file:../../packages/server",
+    "@webwirejs/client": "file:../../packages/client",
+    "@webwirejs/express": "file:../../packages/express",
+    "@webwirejs/server": "file:../../packages/server",
     "express": "^5.0.0"
   }
 }

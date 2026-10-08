@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 import { createBunWebSocket } from 'hono/bun'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/hono'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/hono'
 
 const app = new Hono()
 const wire = new WebWireServer()

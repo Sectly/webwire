@@ -1,5 +1,5 @@
 {
-  "name": "@webwire/hono",
+  "name": "@webwirejs/hono",
   "version": "0.1.0",
   "type": "module",
   "description": "WebWire Hono integration",
@@ -29,8 +29,8 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@webwire/core": "^0.1.0",
-    "@webwire/server": "^0.1.0"
+    "@webwirejs/core": "^0.1.0",
+    "@webwirejs/server": "^0.1.0"
   },
   "peerDependencies": {
     "hono": ">=4.0.0"

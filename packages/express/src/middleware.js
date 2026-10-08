@@ -1,5 +1,5 @@
 /**
- * @param {import('@webwire/server').WebWireServer} wireServer
+ * @param {import('@webwirejs/server').WebWireServer} wireServer
  * @returns {(req: import('express').Request, res: import('express').Response, next: import('express').NextFunction) => void}
  */
 export function webwire(wireServer) {

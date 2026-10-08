@@ -1,5 +1,5 @@
-import { WebWire } from '@webwire/client'
-import { TimeoutError } from '@webwire/core'
+import { WebWire } from '@webwirejs/client'
+import { TimeoutError } from '@webwirejs/core'
 
 const wire = new WebWire('http://localhost:3000/wire')
 

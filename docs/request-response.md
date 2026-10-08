@@ -38,7 +38,7 @@ A `TimeoutError` is thrown if the peer does not respond in time.
 ## Error handling
 
 ```js
-import { TimeoutError } from '@webwire/core'
+import { TimeoutError } from '@webwirejs/core'
 
 try {
   const res = await wire.request('some:op', data)

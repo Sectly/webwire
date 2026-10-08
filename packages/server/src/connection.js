@@ -11,7 +11,7 @@ import {
   DEFAULT_REQUEST_TIMEOUT,
   TimeoutError,
   ProtocolError,
-} from "@webwire/core";
+} from "@webwirejs/core";
 
 let nextConnectionId = 1;
 
@@ -22,7 +22,7 @@ export class WireConnection extends EventEmitter {
    * @param {{
    *   send: (data: Uint8Array) => void,
    *   close: () => void,
-   *   codec?: import('@webwire/core').Codec,
+   *   codec?: import('@webwirejs/core').Codec,
    *   requestTimeout?: number,
    *   server: import('./server.js').WebWireServer,
    * }} opts

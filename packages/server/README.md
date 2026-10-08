@@ -1,19 +1,19 @@
-# @webwire/server
+# @webwirejs/server
 
 Framework-agnostic WebWire.js server for Node.js and Bun.
 
 ## Install
 
 ```bash
-bun add @webwire/server
+bun add @webwirejs/server
 # or
-npm install @webwire/server
+npm install @webwirejs/server
 ```
 
 ## Usage
 
 ```js
-import { WebWireServer } from '@webwire/server'
+import { WebWireServer } from '@webwirejs/server'
 
 const wire = new WebWireServer({
   authenticate: async ({ token, request }) => {
@@ -40,9 +40,9 @@ wire.on('connection', (conn) => {
 
 Use one of the framework packages for the simplest setup:
 
-- [`@webwire/express`](../express) - Express middleware
-- [`@webwire/hono`](../hono) - Hono app factory
-- [`@webwire/fastify`](../fastify) - Fastify plugin
+- [`@webwirejs/express`](../express) - Express middleware
+- [`@webwirejs/hono`](../hono) - Hono app factory
+- [`@webwirejs/fastify`](../fastify) - Fastify plugin
 
 Or integrate manually with `createConnection`:
 

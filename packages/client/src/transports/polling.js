@@ -1,4 +1,4 @@
-import { TransportError } from "@webwire/core";
+import { TransportError } from "@webwirejs/core";
 
 const POLL_PATH = "/poll";
 const SEND_PATH = "/send";

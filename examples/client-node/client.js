@@ -1,6 +1,6 @@
 // Run this alongside any of the server examples.
 // By default it connects to localhost:3000/wire.
-import { WebWire } from '@webwire/client'
+import { WebWire } from '@webwirejs/client'
 
 const wire = new WebWire('http://localhost:3000/wire')
 

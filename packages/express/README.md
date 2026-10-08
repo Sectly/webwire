@@ -1,13 +1,13 @@
-# @webwire/express
+# @webwirejs/express
 
 Express middleware for WebWire.js. Handles WebSocket upgrades and HTTP Long Polling routes.
 
 ## Install
 
 ```bash
-bun add @webwire/express @webwire/server express
+bun add @webwirejs/express @webwirejs/server express
 # or
-npm install @webwire/express @webwire/server express
+npm install @webwirejs/express @webwirejs/server express
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install @webwire/express @webwire/server express
 ```js
 import express from 'express'
 import { createServer } from 'http'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/express'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/express'
 
 const app = express()
 const wire = new WebWireServer()

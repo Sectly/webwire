@@ -1,7 +1,7 @@
 // Usage: node client.js token-alice
 //        node client.js token-bob
 //        node client.js bad-token
-import { WebWire } from '@webwire/client'
+import { WebWire } from '@webwirejs/client'
 
 const token = process.argv[2] ?? 'token-alice'
 

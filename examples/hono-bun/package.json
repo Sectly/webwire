@@ -7,8 +7,8 @@
     "start": "bun server.js"
   },
   "dependencies": {
-    "@webwire/hono": "file:../../packages/hono",
-    "@webwire/server": "file:../../packages/server",
+    "@webwirejs/hono": "file:../../packages/hono",
+    "@webwirejs/server": "file:../../packages/server",
     "hono": "^4.0.0"
   }
 }

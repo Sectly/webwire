@@ -7,8 +7,8 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@webwire/express": "file:../../packages/express",
-    "@webwire/server": "file:../../packages/server",
+    "@webwirejs/express": "file:../../packages/express",
+    "@webwirejs/server": "file:../../packages/server",
     "express": "^5.0.0"
   }
 }

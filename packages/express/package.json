@@ -1,5 +1,5 @@
 {
-  "name": "@webwire/express",
+  "name": "@webwirejs/express",
   "version": "0.1.0",
   "type": "module",
   "description": "WebWire Express.js integration",
@@ -29,8 +29,8 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@webwire/core": "^0.1.0",
-    "@webwire/server": "^0.1.0"
+    "@webwirejs/core": "^0.1.0",
+    "@webwirejs/server": "^0.1.0"
   },
   "peerDependencies": {
     "express": ">=4.0.0"

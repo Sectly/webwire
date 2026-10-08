@@ -1,8 +1,8 @@
-# @webwire/core
+# @webwirejs/core
 
 Shared protocol implementation for WebWire.js - binary framing, codecs, event emitter, and error types.
 
-You rarely need to import this directly. It is a peer dependency of `@webwire/client` and `@webwire/server`.
+You rarely need to import this directly. It is a peer dependency of `@webwirejs/client` and `@webwirejs/server`.
 
 ## What's in here
 
@@ -24,7 +24,7 @@ import {
   FrameType,
   jsonCodec,
   ProtocolError,
-} from '@webwire/core'
+} from '@webwirejs/core'
 ```
 
 ## Error types

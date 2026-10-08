@@ -1,4 +1,4 @@
-import { WebWire } from '@webwire/client'
+import { WebWire } from '@webwirejs/client'
 import { msgpackCodec } from './codec.js'
 
 const wire = new WebWire('http://localhost:3000/wire', { codec: msgpackCodec })

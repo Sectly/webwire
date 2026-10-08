@@ -19,7 +19,7 @@ import {
   AuthError,
   ProtocolError,
   TransportError,
-} from "@webwire/core";
+} from "@webwirejs/core";
 import { selectTransport } from "./transport-selector.js";
 
 /** @enum {string} */
@@ -36,7 +36,7 @@ const LIFECYCLE_EVENTS = new Set(["connecting", "connect", "disconnect", "reconn
 /**
  * @typedef {object} WebWireOptions
  * @property {string[]} [transports] - Transport priority order. Default: `['webtransport', 'websocket', 'polling']`.
- * @property {import('@webwire/core').Codec} [codec] - Codec to use. Default: {@link jsonCodec}.
+ * @property {import('@webwirejs/core').Codec} [codec] - Codec to use. Default: {@link jsonCodec}.
  * @property {false | { enabled: boolean, threshold?: number }} [compression]
  * @property {unknown} [auth] - Auth credentials sent in the handshake.
  * @property {number} [requestTimeout] - Default request timeout in ms.

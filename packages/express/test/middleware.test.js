@@ -2,14 +2,14 @@ import { describe, it, expect, afterEach } from "bun:test";
 import http from "http";
 import express from "express";
 import WebSocket from "ws";
-import { WebWireServer } from "@webwire/server";
+import { WebWireServer } from "@webwirejs/server";
 import { webwire } from "../src/middleware.js";
 import {
   encodeFrame,
   encodeHandshake,
   FrameType,
   PROTOCOL_VERSION,
-} from "@webwire/core";
+} from "@webwirejs/core";
 
 function startServer(wireServer) {
   const app = express();
@@ -20,7 +20,7 @@ function startServer(wireServer) {
   );
 }
 
-describe("@webwire/express middleware", () => {
+describe("@webwirejs/express middleware", () => {
   let server;
 
   afterEach(() => new Promise((r) => (server ? server.close(r) : r())));

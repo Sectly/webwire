@@ -3,14 +3,14 @@
 ## Express
 
 ```bash
-bun add @webwire/express express
+bun add @webwirejs/express express
 ```
 
 ```js
 import express from 'express'
 import { createServer } from 'http'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/express'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/express'
 
 const app = express()
 const wire = new WebWireServer()
@@ -24,14 +24,14 @@ The middleware handles WebSocket upgrades and all three polling routes automatic
 ## Hono - Bun
 
 ```bash
-bun add @webwire/hono hono
+bun add @webwirejs/hono hono
 ```
 
 ```js
 import { Hono } from 'hono'
 import { createBunWebSocket } from 'hono/bun'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/hono'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/hono'
 
 const app = new Hono()
 const wire = new WebWireServer()
@@ -45,15 +45,15 @@ Bun.serve({ fetch: app.fetch, websocket, port: 3000 })
 ## Hono - Node.js
 
 ```bash
-npm install @webwire/hono hono @hono/node-server
+npm install @webwirejs/hono hono @hono/node-server
 ```
 
 ```js
 import { serve } from '@hono/node-server'
 import { createNodeWebSocket } from '@hono/node-server/ws'
 import { Hono } from 'hono'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/hono'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/hono'
 
 const app = new Hono()
 const wire = new WebWireServer()
@@ -70,14 +70,14 @@ injectWebSocket(server)
 ## Fastify
 
 ```bash
-bun add @webwire/fastify fastify @fastify/websocket
+bun add @webwirejs/fastify fastify @fastify/websocket
 ```
 
 ```js
 import Fastify from 'fastify'
 import websocket from '@fastify/websocket'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/fastify'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/fastify'
 
 const fastify = Fastify()
 const wire = new WebWireServer()
@@ -88,7 +88,7 @@ await fastify.register(webwire, { wireServer: wire, prefix: '/wire' })
 await fastify.listen({ port: 3000 })
 ```
 
-`@fastify/websocket` must be registered before `@webwire/fastify`.
+`@fastify/websocket` must be registered before `@webwirejs/fastify`.
 
 ## Custom
 

@@ -1,7 +1,7 @@
 import express from 'express'
 import { createServer } from 'http'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/express'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/express'
 
 const wire = new WebWireServer()
 

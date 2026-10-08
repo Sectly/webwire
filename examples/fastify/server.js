@@ -1,7 +1,7 @@
 import Fastify from 'fastify'
 import websocket from '@fastify/websocket'
-import { WebWireServer } from '@webwire/server'
-import { webwire } from '@webwire/fastify'
+import { WebWireServer } from '@webwirejs/server'
+import { webwire } from '@webwirejs/fastify'
 
 const fastify = Fastify({ logger: false })
 const wire = new WebWireServer()

@@ -25,7 +25,7 @@ import { Hono } from "hono";
  * const server = serve({ fetch: app.fetch, port: 3000 })
  * injectWebSocket(server)
  *
- * @param {import('@webwire/server').WebWireServer} wireServer
+ * @param {import('@webwirejs/server').WebWireServer} wireServer
  * @param {Function} upgradeWebSocket - Runtime-specific upgrade helper from Hono.
  * @returns {Hono}
  */

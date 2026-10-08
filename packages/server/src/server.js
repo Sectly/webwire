@@ -11,12 +11,12 @@ import {
   MAX_EVENT_NAME_LEN,
   AuthError,
   ProtocolError,
-} from "@webwire/core";
+} from "@webwirejs/core";
 import { WireConnection } from "./connection.js";
 
 /**
  * @typedef {object} WebWireServerOptions
- * @property {import('@webwire/core').Codec} [codec]
+ * @property {import('@webwirejs/core').Codec} [codec]
  * @property {(ctx: { token?: unknown, request?: unknown }) => Promise<unknown>} [authenticate]
  * @property {boolean | { interval?: number, timeout?: number }} [heartbeat]
  * @property {number} [requestTimeout]

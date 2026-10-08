@@ -5,8 +5,8 @@
  * @example
  * import Fastify from 'fastify'
  * import websocket from '@fastify/websocket'
- * import { WebWireServer } from '@webwire/server'
- * import { webwire } from '@webwire/fastify'
+ * import { WebWireServer } from '@webwirejs/server'
+ * import { webwire } from '@webwirejs/fastify'
  *
  * const fastify = Fastify()
  * const wire = new WebWireServer()
@@ -19,7 +19,7 @@
 
 /**
  * @param {import('fastify').FastifyInstance} fastify
- * @param {{ wireServer: import('@webwire/server').WebWireServer }} opts
+ * @param {{ wireServer: import('@webwirejs/server').WebWireServer }} opts
  * @returns {Promise<void>}
  */
 export async function webwire(fastify, opts) {
