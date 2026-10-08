@@ -1,0 +1,14 @@
+{
+  "name": "example-express",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@webwire/express": "file:../../packages/express",
+    "@webwire/server": "file:../../packages/server",
+    "express": "^5.0.0"
+  }
+}

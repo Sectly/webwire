@@ -1,0 +1,16 @@
+{
+  "name": "example-auth",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node client.js"
+  },
+  "dependencies": {
+    "@webwire/client": "file:../../packages/client",
+    "@webwire/express": "file:../../packages/express",
+    "@webwire/server": "file:../../packages/server",
+    "express": "^5.0.0"
+  }
+}

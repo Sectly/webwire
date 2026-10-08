@@ -1,0 +1,17 @@
+{
+  "name": "example-custom-codec",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node client.js"
+  },
+  "dependencies": {
+    "@msgpack/msgpack": "^3.0.0",
+    "@webwire/client": "file:../../packages/client",
+    "@webwire/express": "file:../../packages/express",
+    "@webwire/server": "file:../../packages/server",
+    "express": "^5.0.0"
+  }
+}
