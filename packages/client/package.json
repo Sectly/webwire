@@ -5,6 +5,12 @@
   "description": "WebWire universal client - Browser, Node.js, Bun",
   "license": "MIT",
   "author": "Sectly",
+  "homepage": "https://github.com/Sectly/webwire#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sectly/webwire.git",
+    "directory": "packages/client"
+  },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "exports": {
